@@ -23,13 +23,9 @@ public sealed class MetawireImporter : ScriptedImporter
 
         var meshFilter = gameObject.AddComponent<MeshFilter>();
         meshFilter.sharedMesh = mesh;
-
-        var pipelineAsset = GraphicsSettings.currentRenderPipeline;
-        var baseMaterial = pipelineAsset ? pipelineAsset.defaultLineMaterial :
-          AssetDatabase.GetBuiltinExtraResource<Material>("Default-Line.mat");
         
         var meshRenderer = gameObject.AddComponent<MeshRenderer>();
-        meshRenderer.sharedMaterial = baseMaterial;
+        meshRenderer.sharedMaterial = DefaultMaterial;
 
         context.AddObjectToAsset("prefab", gameObject);
         if (mesh != null) context.AddObjectToAsset("mesh", mesh);
@@ -58,6 +54,14 @@ public sealed class MetawireImporter : ScriptedImporter
 
         return mesh;
     }
+
+    #endregion
+
+    #region Private utilities
+
+    Material DefaultMaterial =>
+      GraphicsSettings.currentRenderPipeline?.defaultLineMaterial
+        ?? AssetDatabase.GetBuiltinExtraResource<Material>("Default-Line.mat");
 
     #endregion
 }
