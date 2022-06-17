@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "jp.keijiro.metawire": {
+      "version": "file:jp.keijiro.metawire",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    }
+  }
+}

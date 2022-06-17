@@ -1,0 +1,17 @@
+{
+    "name": "Metawire.Editor",
+    "references": [
+        "GUID:9484ca898c5f4fe8a6137c38719032ca"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

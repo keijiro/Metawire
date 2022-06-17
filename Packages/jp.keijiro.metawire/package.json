@@ -1,0 +1,14 @@
+{
+  "author": "Keijiro Takahashi",
+  "dependencies": { },
+  "description": "Metadata-only mesh data importer (wireframe primitives)",
+  "displayName": "Metawire",
+  "keywords": [ "unity" ],
+  "license": "Unlicense",
+  "name": "jp.keijiro.metawire",
+  "repository": "github:keijiro/Metamesh",
+  "unity": "2021.3",
+  "unityRelease": "0f1",
+  "version": "1.0.0"
+}
+
