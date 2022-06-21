@@ -14,6 +14,7 @@ public sealed class MetawireImporter : ScriptedImporter
     [SerializeField] Line _line = new Line();
     [SerializeField] Quad _quad = new Quad();
     [SerializeField] Circle _circle = new Circle();
+    [SerializeField] Box _box = new Box();
     [SerializeField] bool _readWrite = false;
 
     public override void OnImportAsset(AssetImportContext context)
@@ -47,6 +48,7 @@ public sealed class MetawireImporter : ScriptedImporter
             case Shape.Line: _line.Generate(mesh); break;
             case Shape.Quad: _quad.Generate(mesh); break;
             case Shape.Circle: _circle.Generate(mesh); break;
+            case Shape.Box: _box.Generate(mesh); break;
         }
 
         mesh.RecalculateBounds();

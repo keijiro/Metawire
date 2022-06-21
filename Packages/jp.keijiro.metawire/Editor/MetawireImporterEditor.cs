@@ -11,6 +11,7 @@ sealed class MetawireImporterEditor : ScriptedImporterEditor
     SerializedProperty _line;
     SerializedProperty _quad;
     SerializedProperty _circle;
+    SerializedProperty _box;
     SerializedProperty _readWrite;
 
     public override void OnEnable()
@@ -20,6 +21,7 @@ sealed class MetawireImporterEditor : ScriptedImporterEditor
         _line = serializedObject.FindProperty("_line");
         _quad = serializedObject.FindProperty("_quad");
         _circle = serializedObject.FindProperty("_circle");
+        _box = serializedObject.FindProperty("_box");
         _readWrite = serializedObject.FindProperty("_readWrite");
     }
 
@@ -34,6 +36,7 @@ sealed class MetawireImporterEditor : ScriptedImporterEditor
             case Shape.Line : EditorGUILayout.PropertyField(_line); break;
             case Shape.Quad : EditorGUILayout.PropertyField(_quad); break;
             case Shape.Circle : EditorGUILayout.PropertyField(_circle); break;
+            case Shape.Box : EditorGUILayout.PropertyField(_box); break;
         }
 
         EditorGUILayout.PropertyField(_readWrite);

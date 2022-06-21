@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Metawire {
 
 [System.Serializable]
-public class Quad
+public sealed class Quad
 {
     public Vector2 Size = new Vector2(1, 1);
     public Axis Axis = Axis.Z;

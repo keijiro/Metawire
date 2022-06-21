@@ -4,7 +4,7 @@ using System.Linq;
 namespace Metawire {
 
 [System.Serializable]
-public class Line
+public sealed class Line
 {
     public Vector3 From = Vector3.zero;
     public Vector3 To = Vector3.forward;

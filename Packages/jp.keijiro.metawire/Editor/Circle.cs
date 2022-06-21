@@ -4,7 +4,7 @@ using System.Linq;
 namespace Metawire {
 
 [System.Serializable]
-public class Circle
+public sealed class Circle
 {
     public float Radius = 0.5f;
     public int Segments = 63;
