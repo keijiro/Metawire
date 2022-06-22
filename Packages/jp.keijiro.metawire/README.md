@@ -11,6 +11,8 @@ At the moment, it only supports very basic primitive shapes.
 - Line
 - Quad
 - Circle
+- Box
+- Ticks (group of short line segments)
 
 How To Install
 --------------
