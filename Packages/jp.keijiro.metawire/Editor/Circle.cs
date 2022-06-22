@@ -7,7 +7,7 @@ namespace Metawire {
 public sealed class Circle
 {
     public float Radius = 0.5f;
-    public int Segments = 63;
+    public int Segments = 64;
     public Axis Axis = Axis.Z;
 
     public void Generate(Mesh mesh)
@@ -16,7 +16,7 @@ public sealed class Circle
           .Select(i => (float)i / Segments);
 
         var idx = Enumerable.Range(0, Segments)
-          .Select(i => new[]{i, (i + 1) % Segments}).SelectMany(i => i);
+          .Select(i => new[]{i, i + 1}).SelectMany(i => i);
 
         var vx = Axis.Get2ndAxis() * Radius;
         var vy = Axis.Get3rdAxis() * Radius;
