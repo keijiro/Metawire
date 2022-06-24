@@ -13,6 +13,7 @@ At the moment, it only supports very basic primitive shapes.
 - Circle
 - Box
 - Ticks (group of short line segments)
+- Grid lines
 
 How To Install
 --------------
