@@ -16,6 +16,7 @@ public sealed class MetawireImporter : ScriptedImporter
     [SerializeField] Circle _circle = new Circle();
     [SerializeField] Box _box = new Box();
     [SerializeField] Ticks _ticks = new Ticks();
+    [SerializeField] Grid _grid = new Grid();
     [SerializeField] bool _readWrite = false;
 
     public override void OnImportAsset(AssetImportContext context)
@@ -51,6 +52,7 @@ public sealed class MetawireImporter : ScriptedImporter
             case Shape.Circle: _circle.Generate(mesh); break;
             case Shape.Box: _box.Generate(mesh); break;
             case Shape.Ticks: _ticks.Generate(mesh); break;
+            case Shape.Grid: _grid.Generate(mesh); break;
         }
 
         mesh.RecalculateBounds();
