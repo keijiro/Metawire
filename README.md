@@ -14,6 +14,7 @@ At the moment, it only supports very basic primitive shapes.
 - Box
 - Ticks (group of short line segments)
 - Grid lines
+- Wireframe (mesh to wireframe converter)
 
 How To Install
 --------------
