@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Metawire {
 
-public enum Shape { Line, Quad, Circle, Box, Ticks, Grid }
+public enum Shape { Line, Quad, Circle, Box, Ticks, Grid, Wireframe }
 
 public enum Axis { X, Y, Z }
 
