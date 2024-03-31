@@ -14,17 +14,18 @@ public sealed class Grid
         var vtx = new List<Vector3>();
         var uv0 = new List<Vector3>();
 
+        var offs = Vector3.Min(Vector3.one, Subdivision) * 0.5f;
         for (var iz = 0; iz <= Subdivision.z; iz++)
         {
-            var w = (float)iz / Subdivision.z;
+            var w = (float)iz / Mathf.Max(1, Subdivision.z);
             for (var iy = 0; iy <= Subdivision.y; iy++)
             {
-                var v = (float)iy / Subdivision.y;
+                var v = (float)iy / Mathf.Max(1, Subdivision.y);
                 for (var ix = 0; ix <= Subdivision.x; ix++)
                 {
-                    var u = (float)ix / Subdivision.x;
+                    var u = (float)ix / Mathf.Max(1, Subdivision.x);
                     var t = new Vector3(u, v, w);
-                    vtx.Add(Vector3.Scale(t - Vector3.one * 0.5f, Size));
+                    vtx.Add(Vector3.Scale(t - offs, Size));
                     uv0.Add(t);
                 }
             }
