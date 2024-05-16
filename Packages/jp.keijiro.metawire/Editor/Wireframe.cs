@@ -11,6 +11,7 @@ public sealed class Wireframe
 
     public void Generate(Mesh mesh)
     {
+        mesh.indexFormat = Source.indexFormat;
         mesh.vertices = Source.vertices;
 
         var pairs = new HashSet<(int i1, int i2)>();
