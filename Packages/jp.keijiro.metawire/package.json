@@ -1,6 +1,6 @@
 {
   "name": "jp.keijiro.metawire",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "displayName": "Metawire",
   "description": "Metadata-only mesh data importer (wireframe primitives)",
   "unity": "2022.3",
@@ -10,5 +10,5 @@
   "documentationUrl": "https://github.com/keijiro/Metawire",
   "licensesUrl": "https://github.com/keijiro/Metawire/blob/main/LICENSE",
   "license": "Unlicense",
-  "_upm": { "changelog": "" }
+  "_upm": { "changelog": "<b>Added</b><br>- Added signing for Unity 6.3." }
 }
