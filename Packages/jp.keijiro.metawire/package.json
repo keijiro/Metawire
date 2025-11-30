@@ -1,14 +1,14 @@
 {
+  "name": "jp.keijiro.metawire",
+  "version": "2.1.1",
+  "displayName": "Metawire",
+  "description": "Metadata-only mesh data importer (wireframe primitives)",
+  "unity": "2022.3",
   "author": "Keijiro Takahashi",
   "dependencies": { },
-  "description": "Metadata-only mesh data importer (wireframe primitives)",
-  "displayName": "Metawire",
-  "keywords": [ "unity" ],
+  "changelogUrl": "https://github.com/keijiro/Metawire/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://github.com/keijiro/Metawire",
+  "licensesUrl": "https://github.com/keijiro/Metawire/blob/main/LICENSE",
   "license": "Unlicense",
-  "name": "jp.keijiro.metawire",
-  "repository": "github:keijiro/Metamesh",
-  "unity": "2021.3",
-  "unityRelease": "0f1",
-  "version": "2.1.1"
+  "_upm": { "changelog": "" }
 }
-
