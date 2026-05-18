@@ -56,7 +56,11 @@ sealed class MetawireImporterEditor : ScriptedImporterEditor
 
     [MenuItem("Assets/Create/Metawire")]
     public static void CreateNewAsset()
+#if UNITY_6000_5_OR_NEWER
+      => ProjectWindowUtil.CreateAssetWithTextContent("New Metawire.metawire", "");
+#else
       => ProjectWindowUtil.CreateAssetWithContent("New Metawire.metawire", "");
+#endif
 }
 
 } // namespace Metawire
